@@ -1,0 +1,12 @@
+import numpy as np  # import numpy library under alias np
+import matplotlib   
+import matplotlib.pyplot as plt # import pyplot library under alias plt
+
+# This is actually not Python, but a "cell magic" to tell Jupyter how to display plots
+%matplotlib inline
+
+x = np.linspace(0, 20, 1000)     # 100 evenly-spaced values from 0 to 50
+y = np.sin(x)
+
+plt.plot(x, y)
+plt.show()
